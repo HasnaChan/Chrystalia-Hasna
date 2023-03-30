@@ -1,0 +1,1281 @@
+@media only screen and (min-width: 833px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    /* header */
+    .fugemylogo{
+        display: flex;
+        justify-content: left;
+        position: absolute;
+        left: 0;
+        padding: 0.4vw 1.5vw;
+    }
+
+
+    .profile{
+        justify-content: right;
+        padding: 0.5vw 0.8vw;
+    }
+
+    .header{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        position: fixed;
+        left: 0vw;
+        width: relative;
+        height: 5vw;
+        right: 0vw;
+        list-style-type: none;
+        background-color: #83DBEE;
+    }
+
+    #myLinks{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #myLinks3{
+        display: none;
+    }
+    
+    #myLinks2{
+        display: none;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .button {
+        background-color: #83DBEE;
+        border: none;
+        color: white;
+        padding: .5vw 2vw;
+        text-align:center;
+        display: inline-block;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        font-size: 1vw;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .button2{
+        display: none;
+    }
+    span .button:hover{
+        height: 5vw;
+        background-color: #73CDE1;
+    }
+
+
+    
+    /*content*/
+
+    /*Carousel*/
+    .size{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+    }
+    .wrapper-content{
+        width: 100%;
+        height: 75vw;
+    }
+    .middle{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* height: 40vw; */
+        top: 4vw;
+        /* border: 1px solid blue; */
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+    
+    #carouselContainer{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        flex-direction: row;
+        /* width: 65.368vw; */
+        height: 11.5vw;
+        top: 4vw;
+        background: url(iklan-01.png);
+        filter: drop-shadow(0vw .4vw .4vw rgba(0, 0, 0, 0.25)); 
+        display: flex;
+        overflow: hidden;
+        margin-bottom: 5vw;
+    }
+    
+    .carouselAds{
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-direction: row;
+        /* width: 65.368vw; */
+        height: 11.5vw;
+        transition: opacity .2s ease-out;
+        opacity: .5;
+        display: none;
+    }
+    
+    .carouselAds.active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-direction: row;
+        /* width: 65.368vw; */
+        height: 11.5vw;
+        opacity: 1;
+        display:block; 
+    }
+    
+    .buttonAds{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        opacity: .5;
+        color: #73CDE1;
+        transition: opacity .2s ease-out;
+        position: relative;
+        width: 2vw;
+        height: 3.8vw;
+        top: 2vw;
+    }
+    
+    .buttonSize{
+        height:2.5vw;
+    }
+    
+    .buttonAds:hover{
+        opacity: 1;
+    }
+    
+    #buttonLeft{
+        position: relative;
+        left: 0;
+    }
+    
+    #buttonRight{
+        position: relative;
+        right: 0;
+    }
+    
+
+    /*Content after carousel*/
+
+    .label{
+        /* top: 8.5vw; */
+        margin-bottom: 1.5vw;
+        width: 63vw;
+        height: 2vw;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    
+    
+    .bestseller{
+        width: 19vw;
+        height: 4vw;
+        background: #F7BB6B;
+        box-shadow: .5vw .5vw .4vw rgba(0, 0, 0, 0.25);
+        border-radius: 4vw;
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2vw;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        display: flex;
+        color: #F25E0D;
+    }
+    
+    .recomendation{
+        width: 23vw;
+        height: 4vw;
+        background: #F7BB6B;
+        box-shadow: .5vw .5vw 4.4vw rgba(0, 0, 0, 0.25);
+        border-radius: 40px;
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2vw;
+        line-height: 2vw;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        display: flex;
+        color: #876332;
+    }
+    
+    main{
+        /* top: 5vw; */
+        max-width: 65.3675vw;
+        /* margin-top: .5vw; */
+        padding: 5vw 1vw;
+        justify-content:space-around;
+        /* border: 1px solid greenyellow; */
+    }
+      
+    .wrapper {
+        /* top: 5vw; */
+        position: relative;
+        display: flex;
+        height: 15vw;
+        /* border: 1px solid black; */
+    }
+    
+    .wrapper:before, .wrapper:after {
+        width: 63.6vw;
+        height: 100%;
+        top: 5vw;
+        display: block;
+    }
+      
+    
+    .items {
+        position: relative;
+        display: flex;
+        align-items: center;
+        /* top: 5vw; */
+        width: 65.368vw;
+        height: 13vw;
+        overflow: hidden;
+        cursor: pointer;
+        background: rgba(144, 224, 239, 0.3);
+        /* border: 1px solid red; */
+    }
+    
+    .items2 {
+        position: relative;
+        display: flex;
+        align-items: center;
+        /* top: 5vw; */
+        width: 65.368vw;
+        height: 13vw;
+        overflow: hidden;
+        cursor: pointer;
+        background: rgba(144, 224, 239, 0.3);
+        /* border: 1px solid red; */
+    }
+    
+    .items.active {
+        cursor: grab;
+    }
+    
+    .items2.active {
+        cursor: grab;
+    }
+      
+    .item {
+        display: flex;
+        align-items: center;
+        top: 5vw;
+        display: inline-block;
+        margin-left: 2vw;
+        color: #73CDE1;
+    }
+    
+    .item:last-child {
+        margin-right: 2vw;
+    }
+    
+    .coursesSize{
+        height: 10vw;
+    }
+    .socmedlogo{
+        width:2vw;
+        height:2vw;
+    }
+    
+    .logo{
+        width:10vw;
+        height:5vw;
+    }
+    
+    .profilelogo{
+        width:4vw;
+        /* height:40px; */
+    }
+    
+    /* footer */
+    .centered{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .txt{
+        font-family: 'Quicksand';
+        font-style: normal;
+    }
+
+    .sosMedBox{
+        width: 12.5vw;
+        height: 3vw;
+        justify-content: space-between;
+    }
+
+    .footer{
+        position: relative;
+        height: 16vw;
+        min-width: 100%;
+        background-color: #AAEAF9;
+        align-items: flex-end;
+        text-align: center;
+    }
+
+    .footerTxt1{
+        
+        font-weight: 700;
+        font-size: 1.3vw;
+        line-height: 1.5vw;
+        color: #0077B6;
+    }
+
+    .footerTxt2{
+        
+        font-weight: 700;
+        font-size: 1.1vw;
+        line-height: 2.5vw;
+        color: #0077B6;
+    }
+
+    .footerTxt3{
+        
+        font-weight: 700;
+        font-size: .8vw;
+        line-height: 2.5vw;
+        color: #0077B6;
+    }
+}
+
+/* tablet */
+@media only screen and (max-width: 832px) and (min-width: 360px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    /*Header*/
+    .hamburger{
+        display: block;
+        width: 2vw;
+        padding-top: 0.5vw;
+    }
+
+    .size{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .wrapper{
+        width: 100%;
+        height: 30vw;
+    }
+    .wrapAll{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
+
+    .fugemylogo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        padding: 2.5vw 0vw;
+        height: 0.5vw;
+    }
+    
+    .profile{
+        justify-content: right;
+        padding: 0.8vw 1vw;
+    }
+    
+    .header{
+        display: flex;
+        justify-content: right;
+        position: fixed;
+        top: 0vw;
+        left: 0vw;
+        width: relative;
+        height: 5vw;
+        right: 0vw;
+        list-style-type: none;
+        padding: 0vw;
+        background-color: #83DBEE; 
+    }
+
+
+    #myLinks{
+        display: none;
+    }
+
+    #myLinks3{
+        display: none;
+    }
+
+    #myLinks2{
+        justify-content: right;
+        height: 100vh;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #83DBEE;
+    }
+
+    .buttonActivate{
+        justify-content: right;
+        background-color: #73CDE1;
+        border: none;
+        color: white;
+        text-align: center;
+        display: inline-block;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        font-size: 1vw;
+    }
+    
+    .button2 {
+        background-color: #83DBEE;
+        border: none;
+        color: white;
+        justify-content: right;
+        text-align: center;
+        display: inline-block;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        font-size: 1vw;
+    }
+
+    .button {
+        display: none;
+    }
+        
+    .header #myLinks {
+        display: block;
+    }
+    
+    .header a {
+        color: white;
+        padding: 1.4vw 1.6vw;
+        text-decoration: none;
+        font-size: 1vw;
+        display: block;
+    }
+
+    .header a.icon {
+        display: block;
+        position: absolute;
+        right: 0.5vw;
+        top: 0.5vw;
+        padding: 0.8vw 1vw;
+    }
+
+    .header a.icon {
+        display: block;
+        position: absolute;
+        right: 0.5vw;
+        top: 0.5vw;
+        padding: 0.8vw 1vw;
+    }
+
+    .button2 a:hover{
+        display: flex;
+        height: 1vw;
+        width: 4vw;
+        background-color: #73CDE1;
+    }
+    .logo{
+        width:7vw;
+        height:3.5vw;
+    }
+
+    .profilelogo{
+        display: none;
+    }
+
+
+
+/*content*/
+
+    /*Carousel*/
+    .size{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+    }
+    .wrapper-content{
+        width: 100%;
+        height: 75vw;
+    }
+    .middle{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* height: 40vw; */
+        top: 4vw;
+        /* border: 1px solid blue; */
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+    
+    #carouselContainer{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        flex-direction: row;
+        /* width: 65.368vw; */
+        height: 11.5vw;
+        top: 4vw;
+        background: url(iklan-01.png);
+        filter: drop-shadow(0vw .4vw .4vw rgba(0, 0, 0, 0.25)); 
+        display: flex;
+        overflow: hidden;
+        margin-bottom: 5vw;
+    }
+    
+    .carouselAds{
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-direction: row;
+        /* width: 65.368vw; */
+        height: 11.5vw;
+        transition: opacity .2s ease-out;
+        opacity: .5;
+        display: none;
+    }
+    
+    .carouselAds.active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-direction: row;
+        /* width: 65.368vw; */
+        height: 11.5vw;
+        opacity: 1;
+        display:block; 
+    }
+    
+    .buttonAds{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        opacity: .5;
+        color: #73CDE1;
+        transition: opacity .2s ease-out;
+        position: relative;
+        width: 2vw;
+        height: 3.8vw;
+        top: 2vw;
+    }
+    
+    .buttonSize{
+        height:2.5vw;
+    }
+    
+    .buttonAds:hover{
+        opacity: 1;
+    }
+    
+    #buttonLeft{
+        position: relative;
+        left: 0;
+    }
+    
+    #buttonRight{
+        position: relative;
+        right: 0;
+    }
+    
+
+    /*Content after carousel*/
+
+    .label{
+        /* top: 8.5vw; */
+        margin-bottom: 1.5vw;
+        width: 63vw;
+        height: 2vw;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    
+    
+    .bestseller{
+        width: 19vw;
+        height: 4vw;
+        background: #F7BB6B;
+        box-shadow: .5vw .5vw .4vw rgba(0, 0, 0, 0.25);
+        border-radius: 4vw;
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2vw;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        display: flex;
+        color: #F25E0D;
+    }
+    
+    .recomendation{
+        width: 23vw;
+        height: 4vw;
+        background: #F7BB6B;
+        box-shadow: .5vw .5vw 4.4vw rgba(0, 0, 0, 0.25);
+        border-radius: 40px;
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2vw;
+        line-height: 2vw;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        display: flex;
+        color: #876332;
+    }
+    
+    main{
+        /* top: 5vw; */
+        max-width: 65.3675vw;
+        /* margin-top: .5vw; */
+        padding: 2vw 1vw;
+        justify-content:space-around;
+        /* border: 1px solid greenyellow; */
+    }
+      
+    .wrapper {
+        /* top: 5vw; */
+        position: relative;
+        display: flex;
+        height: 15vw;
+        /* border: 1px solid black; */
+    }
+    
+    .wrapper:before, .wrapper:after {
+        width: 63.6vw;
+        height: 100%;
+        top: 5vw;
+        display: block;
+    }
+      
+    
+    .items {
+        position: relative;
+        display: flex;
+        align-items: center;
+        /* top: 5vw; */
+        width: 65.368vw;
+        height: 13vw;
+        overflow: hidden;
+        cursor: pointer;
+        background: rgba(144, 224, 239, 0.3);
+        /* border: 1px solid red; */
+    }
+    
+    .items2 {
+        position: relative;
+        display: flex;
+        align-items: center;
+        /* top: 5vw; */
+        width: 65.368vw;
+        height: 13vw;
+        overflow: hidden;
+        cursor: pointer;
+        background: rgba(144, 224, 239, 0.3);
+        /* border: 1px solid red; */
+    }
+    
+    .items.active {
+        cursor: grab;
+    }
+    
+    .items2.active {
+        cursor: grab;
+    }
+      
+    .item {
+        display: flex;
+        align-items: center;
+        top: 5vw;
+        display: inline-block;
+        margin-left: 2vw;
+        color: #73CDE1;
+    }
+    
+    .item:last-child {
+        margin-right: 2vw;
+    }
+    
+    .coursesSize{
+        height: 10vw;
+    }
+    .socmedlogo{
+        width:2vw;
+        height:2vw;
+    }
+    
+    .logo{
+        width:10vw;
+        height:5vw;
+    }
+    
+    .profilelogo{
+        width:4vw;
+        /* height:40px; */
+    }
+    
+    
+    
+    
+    /* footer */
+    .logo{
+        width:10vw;
+        height:5vw;
+    }
+    .centered{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .txt{
+        font-family: 'Quicksand';
+        font-style: normal;
+    }
+
+    .sosMedBox{
+        /* width: 12.5vw; */
+        height: 3.5vw;
+        justify-content: space-between;
+    }
+
+    .footer{
+        position: relative;
+        height: 16vw;
+        min-width: 100%;
+        background-color: #AAEAF9;
+        align-items: flex-end;
+        text-align: center;
+    }
+
+    .footerTxt1{
+            
+        font-weight: 700;
+        font-size: 1.3vw;
+        line-height: 1.5vw;
+        color: #0077B6;
+    }
+
+    .footerTxt2{
+        
+        font-weight: 700;
+        font-size: 1.1vw;
+        line-height: 2.5vw;
+        color: #0077B6;
+    }
+
+    .footerTxt3{
+        
+        font-weight: 700;
+        font-size: .8vw;
+        line-height: 2.5vw;
+        color: #0077B6;
+    }
+
+}
+
+/* android */
+
+@media only screen and (max-width: 360px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    /*Header*/
+    .hamburger{
+        display: block;
+        width: 2vw;
+        padding-top: 0.5vw;
+    }
+
+    .size{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .wrapper{
+        width: 100%;
+        height: 30vw;
+    }
+    .wrapAll{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
+
+    .fugemylogo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        padding: 2.5vw 0vw;
+        height: 0.5vw;
+    }
+
+    .profile{
+        justify-content: right;
+        padding: 0.8vw 1vw;
+    }
+    
+    .header{
+        display: flex;
+        justify-content: right;
+        position: fixed;
+        top: 0vw;
+        left: 0vw;
+        width: relative;
+        height: 5vw;
+        right: 0vw;
+        list-style-type: none;
+        padding: 0vw;
+        background-color: #83DBEE; 
+    }
+
+    #myLinks{
+        display: none;
+    }
+
+    #myLinks2{
+        display: none;
+    }
+
+    #myLinks3{
+        justify-content: right;
+        height: 100vh;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #83DBEE;
+    }
+
+    .buttonActivate{
+        justify-content: right;
+        background-color: #73CDE1;
+        border: none;
+        color: white;
+        text-align: center;
+        display: inline-block;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        font-size: 1vw;
+    }
+    
+    .button2 {
+        background-color: #83DBEE;
+        border: none;
+        color: white;
+        justify-content: right;
+        text-align: center;
+        display: inline-block;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        font-size: 1.4vw;
+    }
+
+    .button {
+        display: none;
+    }
+        
+    .header #myLinks {
+        display: block;
+    }
+
+    .header a {
+        color: white;
+        padding: 1.4vw 1.6vw;
+        text-decoration: none;
+        font-size: 1.4vw;
+        display: block;
+    }
+
+    .header a.icon {
+        display: block;
+        position: absolute;
+        right: 0.5vw;
+        top: 0.5vw;
+        padding: 0.8vw 1vw;
+    }
+
+    .button2 a:hover{
+        display: flex;
+        height: 1vw;
+        width: 4vw;
+        background-color: #73CDE1;
+    }
+    .logo{
+        width:7vw;
+        height:3.5vw;
+    }
+
+    .profilelogo{
+        display: none;
+    }
+
+/*content*/
+
+    /*Carousel*/
+    .size{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+    }
+    .wrapper-content{
+        width: 100%;
+        height: 50vw;
+    }
+    .middle{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* height: 40vw; */
+        top: 4vw;
+        /* border: 1px solid blue; */
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+    
+    #carouselContainer{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        flex-direction: row;
+        /* width: 65.368vw; */
+        height: 15vw;
+        top: 4vw;
+        background: url(iklan-01.png);
+        filter: drop-shadow(0vw .4vw .4vw rgba(0, 0, 0, 0.25)); 
+        display: flex;
+        overflow: hidden;
+        margin-bottom: 5vw;
+    }
+    
+    .carouselAds{
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-direction: row;
+        /* width: 65.368vw; */
+        height: 15vw;
+        transition: opacity .2s ease-out;
+        opacity: .5;
+        display: none;
+    }
+    
+    .carouselAds.active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-direction: row;
+        /* width: 65.368vw; */
+        height: 15vw;
+        opacity: 1;
+        display:block; 
+    }
+    
+    .buttonAds{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        opacity: .5;
+        color: #73CDE1;
+        transition: opacity .2s ease-out;
+        position: relative;
+        width: 2vw;
+        height: 3.8vw;
+        top: 2vw;
+    }
+    
+    .buttonSize{
+        height:2.5vw;
+    }
+    
+    .buttonAds:hover{
+        opacity: 1;
+    }
+    
+    #buttonLeft{
+        position: relative;
+        left: 0;
+    }
+    
+    #buttonRight{
+        position: relative;
+        right: 0;
+    }
+    
+
+    /*Content after carousel*/
+
+    .label{
+        /* top: 8.5vw; */
+        margin-bottom:3vw;
+        width: 63vw;
+        height: 5vw;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .bestseller{
+        width: 19vw;
+        height: 4vw;
+        background: #F7BB6B;
+        box-shadow: .5vw .5vw .4vw rgba(0, 0, 0, 0.25);
+        border-radius: 4vw;
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2vw;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        display: flex;
+        color: #F25E0D;
+    }
+    
+    .recomendation{
+        width: 23vw;
+        height: 4vw;
+        background: #F7BB6B;
+        box-shadow: .5vw .5vw 4.4vw rgba(0, 0, 0, 0.25);
+        border-radius: 40px;
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2vw;
+        line-height: 2vw;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        display: flex;
+        color: #876332;
+    }
+    
+    main{
+        /* top: 5vw; */
+        max-width: 67vw;
+        /* margin-top: .5vw; */
+        padding: 2vw 1vw;
+        justify-content:space-around;
+        /* border: 1px solid greenyellow; */
+    }
+      
+    .wrapper {
+        /* top: 5vw; */
+        position: relative;
+        display: flex;
+        height: 20vw;
+        /* border: 1px solid black; */
+    }
+    
+    .wrapper:before, .wrapper:after {
+        width: 63.6vw;
+        height: 100%;
+        top: 5vw;
+        display: block;
+    }
+      
+    
+    .items {
+        position: relative;
+        display: flex;
+        align-items: center;
+        /* top: 5vw; */
+        width: 65.368vw;
+        height: 20vw;
+        overflow: hidden;
+        cursor: pointer;
+        background: rgba(144, 224, 239, 0.3);
+        /* border: 1px solid red; */
+    }
+    
+    .items2 {
+        position: relative;
+        display: flex;
+        align-items: center;
+        /* top: 5vw; */
+        width: 65.368vw;
+        height: 20vw;
+        overflow: hidden;
+        cursor: pointer;
+        background: rgba(144, 224, 239, 0.3);
+        /* border: 1px solid red; */
+    }
+    
+    .items.active {
+        cursor: grab;
+    }
+    
+    .items2.active {
+        cursor: grab;
+    }
+      
+    .item {
+        display: flex;
+        align-items: center;
+        top: 5vw;
+        display: inline-block;
+        margin-left: 2vw;
+        color: #73CDE1;
+    }
+    
+    .item:last-child {
+        margin-right: 2vw;
+    }
+    
+    .coursesSize{
+        height: 15vw;
+    }
+    .socmedlogo{
+        width:2vw;
+        height:2vw;
+    }
+    
+    .logo{
+        width:10vw;
+        height:5vw;
+    }
+    
+    .profilelogo{
+        width:4vw;
+        /* height:40px; */
+    }
+
+
+/* footer */
+    .centered{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .txt{
+        font-family: 'Quicksand';
+        font-style: normal;
+    }
+
+    .sosMedBox{
+        /* width: 12.5vw; */
+        height: 3.5vw;
+        justify-content: space-between;
+    }
+
+    .footer{
+        position: relative;
+        height: 20vw;
+        min-width: 100%;
+        background-color: #AAEAF9;
+        align-items: flex-end;
+        text-align: center;
+    }
+
+    .footerTxt1{
+        
+        font-weight: 700;
+        font-size: 2vw;
+        line-height: 2vw;
+        color: #0077B6;
+    }
+
+    .footerTxt2{
+        
+        font-weight: 700;
+        font-size: 1.8vw;
+        line-height: 3vw;
+        color: #0077B6;
+    }
+
+    .footerTxt3{
+        
+        font-weight: 700;
+        font-size: 1.5vw;
+        line-height: 3vw;
+        color: #0077B6;
+    }
+}

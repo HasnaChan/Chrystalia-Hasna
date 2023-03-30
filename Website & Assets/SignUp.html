@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="shortcut icon" href="Logo/icon.png" >
+    <link rel = "stylesheet" href="SignUpStyle.css">
+    <style>
+        body{
+            background-image: url(defbg-01.png);
+            background-size: cover;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+ 
+    <div class="size">
+        <div class="wrapper">
+            <div class="centered1">
+
+                <div class="wrapper1">
+                    <img src="Sign Up/Google Logo.png" alt=""  class="signuplogo" >
+                    <span style="padding: .4rem">Sign In with Google</span>
+                </div>
+        
+                <div class="wrapper2">
+                    <table>
+        
+                        <form action="Home.html" method="post" id="SignUpValidation">
+                            <div class="Name" >
+                                <tr>
+                                    <td><label for="Name">Name</label></td>
+                                    <td ><input type="text" name="Name" id="Name"> </td>
+                                    <p class="error" id="NameError"></p>
+                                </tr>
+                            </div>
+                            
+                            <div class="Email" >
+                                <tr>
+                                    <td><label for="Email">Email </label></td>
+                                    <td><input type="text" name="Email" id="Email"></td>
+                                </tr>
+                            </div>
+                
+                            <div class="Phone" >
+                                <tr>
+                                    <td><label for="Phone">Phone</label></td>
+                                    <td><input type="text" name="Phone" id="Phone"></td>
+                                </tr>
+                            </div>
+                
+                            <div class="Address" >
+                                <tr>
+                                    <td><label for="Address">Address    </label></td>
+                                    <td><input type="text" name="Address" id="Address"> </td>
+                                    <p class="error" id="AddressError"></p> 
+                                </tr>
+                            </div>
+                            
+                            <table>
+                                <tr>
+                                    <div>
+                                        <input type="checkbox" name="TNC" id="TNC">
+                                        <label for="TNC">I agree with the Terms and Condition</label>
+                                    </div>
+                                </tr>
+                                
+                            
+                                <div class="SignUpPosition">
+                                     <button type="button" id="SignUp">Sign Up</button>
+                                </div>
+                            </table>
+                        </form>
+                    </table> 
+                </div>
+            </div>
+        </div>
+            <div class="footer">
+                <div><a href="Welcome.html"><img alt="Logo" src="Logo/logo-01.png" class="logo" ></a></div>
+                <div class="footerTxt1 txt">All your learning needs are in FuGemy</div>
+                <div class="footerTxt2 txt">Find Us On Social Media</div>
+                <div class="centered">
+                    <div class="sosMedBox centered">
+                        <div><a href="http://instagram.com/fugemy.co"><img src="Footer/instagram.svg" alt="" class="socmedlogo"></a></div>
+                        <div><a href="https://www.facebook.com/profile.php?id=100079643349396"><img src="Footer/facebook.svg" alt="" class="socmedlogo"></a></div>
+                        <div><a href="https://wa.me/082353257881"><img src="Footer/whatsapp.svg" alt="" class="socmedlogo"></a></div>
+                        <div><a href="http://twitter.com/fugemy"><img src="Footer/twitter.svg" alt="" class="socmedlogo"></a></div>
+                    </div>
+                </div>
+                <div class="footerTxt3 txt">© 2010 FuGemy, inc. All Rights Reserved PT. Sneakys</div>
+            </div>
+         
+            <div class="header">
+                <div class="fugemylogo"><a href="Welcome.html"><img alt="Logo" src="Logo/logo-01.png" class="logo"></a></div>
+                <div id="myLinks">
+                    <span><a href="Home.html"><button class="button">Home</button></a></span>
+                    <span><a href="AboutUs.html"><button class="button">About Us</button></a></span>
+                    <span><a href="LearningList.html"><button class="button">Learning List</button></a></span>
+                    <span><a href="TeachOnFuGemy.html"><button class="button">Teach On FuGemy</button></a></span>
+                    <span><a><button class="button"><img src="profile-01.png" class="profilelogo"  ></button></a></span>
+                </div>
+
+                <div id="myLinks2">
+                    <span><a href="Home.html"><button class="button2">Home</button></a></span>
+                    <span><a href="AboutUs.html"><button class="button2">About Us</button></a></span>
+                    <span><a href="LearningList.html"><button class="button2">Learning List</button></a></span>
+                    <span><a href="TeachOnFuGemy.html"><button class="button2">Teach On FuGemy</button></a></span>
+                    <span><a><button class="button2">Profile</button></a></span>
+                </div>
+                
+                <div id="myLinks3">
+                    <span><a href="Home.html"><button class="button2">Home</button></a></span>
+                    <span><a href="AboutUs.html"><button class="button2">About Us</button></a></span>
+                    <span><a href="LearningList.html"><button class="button2">Learning List</button></a></span>
+                    <span><a href="TeachOnFuGemy.html"><button class="button2">Teach On FuGemy</button></a></span>
+                    <span><a><button class="button2">Profile</button></a></span>
+                </div>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()" > <img alt="hambuger" src="hamburgerIcon.svg" class="hamburger" >
+                  </a>
+            </div>
+        
+    </div>
+    <script src="Header.js"></script>
+    <script src="SignUp.js"></script>
+</body>
+</html> 

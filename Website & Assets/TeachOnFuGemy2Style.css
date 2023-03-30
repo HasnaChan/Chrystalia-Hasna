@@ -1,0 +1,740 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.centered{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.txt{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+}
+.size{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Footer */
+.sosMedBox{
+    width: 12.5vw;
+    height: 3.5vw;
+    justify-content: space-between;
+}
+.footer{
+    position: relative;
+    height: 16vw;
+    min-width: 100%;
+    background-color: #AAEAF9;
+    align-items: flex-end;
+    text-align: center;
+}
+.footerTxt1{
+    font-size: 1.3vw;
+    line-height: 1.5vw;
+    color: #0077B6;
+}
+.footerTxt2{
+    font-size: 1.1vw;
+    line-height: 2.5vw;
+    color: #0077B6;
+}
+.footerTxt3{
+    font-size: .8vw;
+    line-height: 2.5vw;
+    color: #0077B6;
+}
+.sosmedLogo{
+    width: 2vw;
+    height: 2vw;
+}
+.logo{
+    width: 10vw; 
+    height:5vw;
+}
+
+/* Desktop */
+@media only screen and (min-width: 833px){
+    /* Header */
+    .fugemylogo{
+        display: flex;
+        justify-content: left;
+        position: absolute;
+        left: 0;
+        padding: 0.4vw 1.5vw;
+    }
+    .profile{
+        justify-content: right;
+        padding: 0.5vw 0.8vw;
+    }
+    .header{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        position: fixed;
+        left: 0vw;
+        width: relative;
+        height: 5vw;
+        right: 0vw;
+        list-style-type: none;
+        background-color: #83DBEE;
+    }
+    #myLinks{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #myLinks2{
+        display: none;
+    }
+    #myLinks3{
+        display: none;
+    }
+    .hamburger{
+        display: none;
+    }
+    .button {
+        background-color: #83DBEE;
+        border: none;
+        color: white;
+        padding: .5vw 2vw;
+        text-align:center;
+        display: inline-block;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        font-size: 1vw;
+        align-items: center;
+        justify-content: center;
+    }
+    .button2{
+        display: none;
+    }
+    span .button:hover{
+        height: 5vw;
+        background-color: #73CDE1;
+    }
+    .profilelogo{
+        width:4vw;
+    }
+    
+    /* Content */
+    .wrapper{
+        width: 100%;
+        height: 94vw;
+    }
+    .flex-column{
+        display: none;
+    }
+    .teachOnFuGemy2{
+        height: 50%;
+        padding-top: 3vw;
+        
+        display: flex;
+        justify-content:center;
+    }
+    .whyFuGemy-container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        padding-bottom: 4vw;
+        
+        height: 40vw;
+        width: 100vw;
+    }
+    .bar{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items:center;
+        
+        height: 19vw;
+        width: 62.7vw;
+    }
+    .why-box{
+        text-align: center;
+        height: 10vw;
+        width: 13vw;
+    }
+    .why-font{
+        font-size: 1.3vw;
+        color: #4AA1BC;
+    }
+    .why-info-location{
+        padding-left: 2vw;
+    }
+    .info-container{
+        background: #A3E1F3;
+        padding-top: 1.5vw;
+        padding-bottom: 1.7vw;
+        height:45vw;
+        width: 20vw;
+        
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items:center;
+    }
+    .info{
+        height:4vw;
+        width: 10vw;
+        text-align: center; 
+    }
+    .big{
+        font-size: 2.4vw;
+        color: #1485BE;
+    }
+    .med{
+        font-size: 1.6vw;
+        color: #1485BE;
+    }
+    .review{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        
+        margin-top: 8vw;
+        height:30vw;
+
+    }
+    .review-container{
+        background-color: #A3E1F3;
+        height: 20vw;
+        width: 60vw;
+    }
+    .seeAll{
+        font-size: 1.3vw;
+        color: #1485BE;
+        text-decoration: underline;
+        text-align: center;
+    }
+    .textBox{
+        height: 15vw;
+        width: 47vw;
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+    .reviewText{
+        padding-top: .5vw;
+        font-size: 1.3vw;
+        color: #0077B6;
+    }
+    .name{
+        padding-top: 1.5vw;
+        font-weight: 700;
+        font-size: 1.2vw;
+        color: #0077B6;
+    }
+    .profession{
+        font-size: 1vw;
+        color: #46B2E9;
+    }
+    
+    /* resize image */
+    .width-star{
+        width: 1.2vw;
+    }
+    .height-review{
+        height: 20vw;
+    }
+    .height-why-fugemy{
+        height: 12vw;
+    }
+}
+
+/* Tablet */
+@media only screen and (max-width: 832px) and (min-width: 360px){
+    /* Header */
+    .fugemylogo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        padding: 2.5vw 0vw;
+        height: 0.5vw;
+    }
+    .profile{
+        justify-content: right;
+        padding: 0.8vw 1vw;
+    }
+    .header{
+        display: flex;
+        justify-content: right;
+        position: fixed;
+        top: 0vw;
+        left: 0vw;
+        width: relative;
+        height: 5vw;
+        right: 0vw;
+        list-style-type: none;
+        padding: 0vw;
+        background-color: #83DBEE; 
+    }
+    #myLinks{
+        display: none;
+    }
+    #myLinks2{
+        justify-content: right;
+        height: 100vh;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #83DBEE;
+    }
+    #myLinks3{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        width: 2vw;
+        padding-top: 0.5vw;
+    }
+    .buttonActivate{
+        justify-content: right;
+        background-color: #73CDE1;
+        border: none;
+        color: white;
+        text-align: center;
+        display: inline-block;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        font-size: 1vw;
+    }
+    .button2 {
+        background-color: #83DBEE;
+        border: none;
+        color: white;
+        justify-content: right;
+        text-align: center;
+        display: inline-block;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        font-size: 1vw;
+    }
+    .button {
+        display: none;
+    } 
+    .header #myLinks {
+        display: block;
+    }
+    .header a {
+        color: white;
+        padding: 1.4vw 1.6vw;
+        text-decoration: none;
+        font-size: 1vw;
+        display: block;
+    }
+    .header a.icon {
+        display: block;
+        position: absolute;
+        right: 0.5vw;
+        top: 0.5vw;
+        padding: 0.8vw 1vw;
+    }
+    .button2 a:hover{
+        display: flex;
+        height: 1vw;
+        width: 4vw;
+        background-color: #73CDE1;
+    }
+    .profilelogo{
+        display: none;
+    }
+
+    /* Content */
+     .wrapper{
+        width: 100%;
+        height: 180vw;
+    }
+    .flex-row{
+        display: none;
+    }
+    .teachOnFuGemy2{
+        margin-top: 2vw;
+
+        display: flex;
+        justify-content:center;
+    }
+    .whyFuGemy-container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+        margin-top: 5vw;
+        height: 100vw;
+        width: 100vw;
+    }
+    .bar{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items:center;
+
+        height: auto;
+        width: 70vw;
+    }
+    .why-box{
+        text-align: center;
+        height: 20vw;
+        width: 25vw;
+    }
+    .why-font{
+        font-size: 2.1vw;
+        color: #4AA1BC;
+    }
+    .why-info-location{
+        padding-top: 1vw;
+        padding-left: 2.5vw;
+    }
+    .info-container{
+        background: #A3E1F3;
+        padding-top: 5vw;
+        height: 19vw;
+        width: 100vw;
+    }
+    .row{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+    }
+    .column{
+        display: none;
+    }
+    .info{
+        height:auto;
+        width: 20vw;
+        text-align: center; 
+    }
+    .big{
+        font-size: 3vw;
+        color: #1485BE;
+    }
+    .med{
+        font-size: 2.5vw;
+        color: #1485BE;
+    }
+    .review{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        height: 60vw;
+    }
+    .review-container{
+        background-color: #A3E1F3;
+        height: 31vw;
+        width: 80vw;
+    }
+    .seeAll{
+        font-size: 2vw;
+        color: #1485BE;
+        text-decoration: underline;
+        text-align: center;
+    }
+    .textBox{
+        height: 30vw;
+        width: 90vw;
+        margin-top: 3.5vw;
+        margin-left: 3.5vw;
+        margin-right: 3.5vw;
+    }
+    .reviewText{
+        padding-top: 1vw;
+        font-size: 1.9vw;
+        color: #0077B6;
+    }
+    .name{
+        padding-top: 1.5vw;
+        font-size: 2.3vw;
+        color: #0077B6;
+    }
+    .profession{
+        font-size: 1.6vw;
+        color: #46B2E9;
+    }
+    
+    /* resize image*/
+    .width-star{
+        width: 2vw;
+    }
+    .height-review{
+        height: 31vw;
+    }
+    .height-why-fugemy{
+        height: 20vw;
+    }
+}
+
+/* Phone */
+@media only screen and (max-width: 360px){
+    /* Header */
+    .fugemylogo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        padding: 2.5vw 0vw;
+        height: 0.5vw;
+    }
+    .profile{
+        justify-content: right;
+        padding: 0.8vw 1vw;
+    }
+    .header{
+        display: flex;
+        justify-content: right;
+        position: fixed;
+        top: 0vw;
+        left: 0vw;
+        width: relative;
+        height: 5vw;
+        right: 0vw;
+        list-style-type: none;
+        padding: 0vw;
+        background-color: #83DBEE;  
+    }
+    #myLinks{
+        display: none;
+    }
+    #myLinks2{
+        display: none;
+    }
+    #myLinks3{
+        justify-content: right;
+        height: 100vh;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #83DBEE;
+    }
+    .hamburger{
+        display: block;
+        width: 2vw;
+        padding-top: 0.5vw;
+    }
+    .buttonActivate{
+        justify-content: right;
+        background-color: #73CDE1;
+        border: none;
+        color: white;
+        text-align: center;
+        display: inline-block;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        font-size: 1vw;
+    }
+    .button2 {
+        background-color: #83DBEE;
+        border: none;
+        color: white;
+        justify-content: right;
+        text-align: center;
+        display: inline-block;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        font-size: 1.4vw;
+    }
+    .button {
+        display: none;
+    }
+    .header #myLinks {
+        display: block;
+    }
+    .header a {
+        color: white;
+        padding: 1.4vw 1.6vw;
+        text-decoration: none;
+        font-size: 1.4vw;
+        display: block;
+    }
+    .header a.icon {
+        display: block;
+        position: absolute;
+        right: 0.5vw;
+        top: 0.5vw;
+        padding: 0.8vw 1vw;
+    }
+    .button2 a:hover{
+        display: flex;
+        height: 1vw;
+        width: 4vw;
+        background-color: #73CDE1;
+    }
+    .profilelogo{
+        display: none;
+    }
+
+    /* Content */
+    .wrapper{
+        width: 100%;
+        height: 220vw;
+    }
+    .flex-row{
+        display: none;
+    }
+    .teachOnFuGemy2{
+        margin-top: 3vw;
+        
+        display: flex;
+        justify-content:center;
+    }
+    .whyFuGemy-container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+        
+        height: 130vw;
+        width: 100vw;
+    }
+    .bar{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items:center;
+        height: auto;
+        width: 90vw;
+    }
+    .why-box{
+        text-align: center;
+        height: auto;
+        width: 30vw;
+    }
+    .why-font{
+        font-size: 3vw;
+        color: #4AA1BC;
+    }
+    .why-info-location{
+        padding-top: .2vw;
+        padding-left: .5vw;
+    }
+    .info-container{
+        background: #A3E1F3;
+        height: 30vw;
+        width: 100vw;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    .column{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+    }
+    .row{
+        display: none;
+    }
+    .flex-info-row{
+        height:auto;
+        width: 80vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .info{
+        height:auto;
+        width: 30vw;
+        text-align: center;
+    }
+    .big{
+        font-size: 4.8vw;
+        color: #1485BE;
+    }
+    .med{
+        font-size: 3.5vw;
+        color: #1485BE;
+    }
+    .review{
+        margin-top: 2vw;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        height: 70vw;
+        width: auto;
+    }
+    .review-container{
+        background-color: #A3E1F3;
+        height: 35vw;
+        width: 88vw;
+    }
+    .seeAll{
+        font-size: 2.5vw;
+        color: #1485BE;
+        text-decoration: underline;
+        text-align: center;
+    }
+    .textBox{
+        height: 33vw;
+        width: auto;
+        margin-top: 3vw;
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+    .reviewText{
+        padding-top: 1.5vw;
+        font-size: 2.3vw;
+        color: #0077B6;
+    }
+    .name{
+        padding-top: 1.5vw;
+        font-size: 2.4vw;
+        color: #0077B6;
+    }
+    .profession{
+        font-size: 2vw;
+        color: #46B2E9;
+    }
+    
+    /* Footer */
+    .footer{
+        position: relative;
+        height: 20vw;
+        min-width: 100%;
+        background-color: #AAEAF9;
+        align-items: flex-end;
+        text-align: center;
+    }
+    .footerTxt1{
+        font-size: 2vw;
+            line-height: 2vw;
+        color: #0077B6;
+    }
+    .footerTxt2{
+        font-size: 1.8vw;
+        line-height: 3vw;
+        color: #0077B6;
+    }
+    .footerTxt3{
+        font-size: 1.5vw;
+        line-height: 3vw;
+        color: #0077B6;
+    }
+
+    /* resize image*/
+    .width-star{
+        width: 2.3vw;
+    }
+    .height-review{
+        height: 35vw;
+    }
+    .height-why-fugemy{
+        height: 20vw;
+    }
+}
+

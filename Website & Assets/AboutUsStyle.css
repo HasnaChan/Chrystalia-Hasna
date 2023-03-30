@@ -1,0 +1,919 @@
+/* desktop */
+@media only screen and (min-width: 833px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+     /* header */
+    .fugemylogo{
+        display: flex;
+        justify-content: left;
+        position: absolute;
+        left: 0;
+        padding: 0.4vw 1.5vw;
+    }
+
+
+    .profile{
+        justify-content: right;
+        padding: 0.5vw 0.8vw;
+    }
+
+    .header{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        position: fixed;
+        left: 0vw;
+        width: relative;
+        height: 5vw;
+        right: 0vw;
+        list-style-type: none;
+        background-color: #83DBEE;
+    }
+
+    #myLinks{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #myLinks3{
+        display: none;
+    }
+    
+    #myLinks2{
+        display: none;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .button {
+        background-color: #83DBEE;
+        border: none;
+        color: white;
+        padding: .5vw 2vw;
+        text-align:center;
+        display: inline-block;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        font-size: 1vw;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .button2{
+        display: none;
+    }
+    span .button:hover{
+        height: 5vw;
+        background-color: #73CDE1;
+    }
+    
+
+    
+
+    /*Content*/
+    .size{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .wrapper-content{
+        width: 100%;
+        height: 55vw;
+    }
+    .centered{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .ourstory{
+        top: 5.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        flex-direction: column;
+        position: relative;
+        height: 4vw;
+        width:  62vw;
+        font-family: 'Quicksand';
+        font-weight: 700;
+        font-size: 2vw;
+        color: #0077B6;
+        
+    }
+    
+    .stories{
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        flex-direction: row;
+        position: relative;
+        height: 35vw;
+        width: 100%;
+    }
+    
+    .story{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        height: 27vw;
+        width: 40vw;
+        top: 6.5vw;
+        font-family: 'Quicksand';
+        font-weight: 700;
+        font-size: 1.2vw;
+        color: #28759D;
+        background: rgba(144, 224, 239, 0.3);
+        border-radius: 2vw; 
+        padding: 0vw 1vw;
+        filter: blur(0);
+    }
+    
+    .koko{
+        top: 6.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        padding: 0vw 5vw;
+        height: 27vw;
+    }
+    
+    .Info{
+        height: 15vw;
+        width: 62.5vw;
+        background: rgba(144, 224, 239, 0.3);
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Quicksand';
+        font-weight: 700;
+        font-size: 3vw;
+        color: #28759D;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+     
+    .OurInfo{
+        font-family: 'Quicksand';
+        font-weight: 700;
+        font-size: 2vw;
+        color: #28759D;
+        width: 12vw;
+        text-align: center;
+    }
+    
+    .wrapper{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        width: 62.5vw;
+    }
+    
+    .kokoSize{
+        height:12vw;
+    }
+    .socmedlogo{
+        width:2vw;
+        height:2vw;
+    }
+    
+    .logo{
+        width:10vw;
+        height:5vw;
+    }
+    
+    .profilelogo{
+        width:4vw;
+        /* height:40px; */
+    }
+    
+    .signuplogo{
+        width: 40px;
+        padding: .4vw;
+    }
+    
+    /* footer */
+    .centered1{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .txt{
+        font-family: 'Quicksand';
+        font-style: normal;
+    }
+
+    .sosMedBox{
+        width: 12.5vw;
+        height: 3vw;
+        justify-content: space-between;
+    }
+
+    .footer{
+        position: relative;
+        height: 16vw;
+        min-width: 100%;
+        background-color: #AAEAF9;
+        align-items: flex-end;
+        text-align: center;
+    }
+
+    .footerTxt1{
+        
+        font-weight: 700;
+        font-size: 1.3vw;
+        line-height: 1.5vw;
+        color: #0077B6;
+    }
+
+    .footerTxt2{
+        
+        font-weight: 700;
+        font-size: 1.1vw;
+        line-height: 2.5vw;
+        color: #0077B6;
+    }
+
+    .footerTxt3{
+        
+        font-weight: 700;
+        font-size: .8vw;
+        line-height: 2.5vw;
+        color: #0077B6;
+    }
+}
+
+/* tablet */
+@media only screen and (max-width: 832px) and (min-width: 360px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    /*Header*/
+    .hamburger{
+        display: block;
+        width: 2vw;
+        padding-top: 0.5vw;
+    }
+
+    .size{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .wrapper{
+        width: 100%;
+        height: 30vw;
+    }
+    .wrapAll{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
+
+    .fugemylogo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        padding: 2.5vw 0vw;
+        height: 0.5vw;
+    }
+    
+    .profile{
+        justify-content: right;
+        padding: 0.8vw 1vw;
+    }
+    
+    .header{
+        display: flex;
+        justify-content: right;
+        position: fixed;
+        top: 0vw;
+        left: 0vw;
+        width: relative;
+        height: 5vw;
+        right: 0vw;
+        list-style-type: none;
+        padding: 0vw;
+        background-color: #83DBEE; 
+    }
+
+    #myLinks{
+        display: none;
+    }
+
+    #myLinks3{
+        display: none;
+    }
+
+    #myLinks2{
+        justify-content: right;
+        height: 100vh;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #83DBEE;
+    }
+
+    .buttonActivate{
+        justify-content: right;
+        background-color: #73CDE1;
+        border: none;
+        color: white;
+        text-align: center;
+        display: inline-block;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        font-size: 1vw;
+    }
+    
+    .button2 {
+        background-color: #83DBEE;
+        border: none;
+        color: white;
+        justify-content: right;
+        text-align: center;
+        display: inline-block;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        font-size: 1vw;
+    }
+
+    .button {
+        display: none;
+    }
+        
+    .header #myLinks {
+        display: block;
+    }
+    
+    .header a {
+        color: white;
+        padding: 1.4vw 1.6vw;
+        text-decoration: none;
+        font-size: 1vw;
+        display: block;
+    }
+
+    .header a.icon {
+        display: block;
+        position: absolute;
+        right: 0.5vw;
+        top: 0.5vw;
+        padding: 0.8vw 1vw;
+    }
+
+    .button2 a:hover{
+        display: flex;
+        height: 1vw;
+        width: 4vw;
+        background-color: #73CDE1;
+    }
+    .logo{
+        width:7vw;
+        height:3.5vw;
+    }
+
+    .profilelogo{
+        display: none;
+    }
+
+    /*Content*/
+    .size{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .wrapper-content{
+        width: 100%;
+        height: 55vw;
+    }
+    .centered{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .ourstory{
+        top: 5.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        flex-direction: column;
+        position: relative;
+        height: 4vw;
+        width:  62vw;
+        font-family: 'Quicksand';
+        font-weight: 700;
+        font-size: 2vw;
+        color: #0077B6;
+        
+    }
+    
+    .stories{
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        flex-direction: row;
+        position: relative;
+        height: 35vw;
+        width: 100%;
+    }
+    
+    .story{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        height: 27vw;
+        width: 40vw;
+        top: 6.5vw;
+        font-family: 'Quicksand';
+        font-weight: 700;
+        font-size: 1.2vw;
+        color: #28759D;
+        background: rgba(144, 224, 239, 0.3);
+        border-radius: 2vw; 
+        padding: 0vw 1vw;
+        filter: blur(0);
+    }
+    
+    .koko{
+        top: 6.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        padding: 0vw 5vw;
+        height: 27vw;
+    }
+    
+    .Info{
+        height: 15vw;
+        width: 62.5vw;
+        background: rgba(144, 224, 239, 0.3);
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Quicksand';
+        font-weight: 700;
+        font-size: 3vw;
+        color: #28759D;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+     
+    .OurInfo{
+        font-family: 'Quicksand';
+        font-weight: 700;
+        font-size: 2vw;
+        color: #28759D;
+        width: 12vw;
+        text-align: center;
+    }
+    
+    .wrapper{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        width: 62.5vw;
+    }
+    
+    .kokoSize{
+        height:12vw;
+    }
+    .socmedlogo{
+        width:2vw;
+        height:2vw;
+    }
+    
+    .logo{
+        width:10vw;
+        height:5vw;
+    }
+    
+    .profilelogo{
+        width:45px;
+        height:40px;
+    }
+    
+    .signuplogo{
+        width: 40px;
+        padding: .4vw;
+    }
+      
+
+    /* footer */
+    .centered1{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .txt{
+        font-family: 'Quicksand';
+        font-style: normal;
+    }
+
+    .sosMedBox{
+        /* width: 12.5vw; */
+        height: 3.5vw;
+        justify-content: space-between;
+    }
+
+    .footer{
+        position: relative;
+        height: 16vw;
+        min-width: 100%;
+        background-color: #AAEAF9;
+        align-items: flex-end;
+        text-align: center;
+    }
+
+    .footerTxt1{
+        
+        font-weight: 700;
+        font-size: 1.3vw;
+        line-height: 1.5vw;
+        color: #0077B6;
+    }
+
+    .footerTxt2{
+        
+        font-weight: 700;
+        font-size: 1.1vw;
+        line-height: 2.5vw;
+        color: #0077B6;
+    }
+
+    .footerTxt3{
+        
+        font-weight: 700;
+        font-size: .8vw;
+        line-height: 2.5vw;
+        color: #0077B6;
+    }
+
+}
+
+
+/* android */
+@media only screen and (max-width: 360px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+
+    /*Header*/
+    .hamburger{
+        display: block;
+        width: 2vw;
+        padding-top: 0.5vw;
+    }
+
+    .size{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .wrapper{
+        width: 100%;
+        height: 30vw;
+    }
+    .wrapAll{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
+
+    .fugemylogo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        padding: 2.5vw 0vw;
+        height: 0.5vw;
+    }
+    
+    .profile{
+        justify-content: right;
+        padding: 0.8vw 1vw;
+    }
+    
+    .header{
+        display: flex;
+        justify-content: right;
+        position: fixed;
+        top: 0vw;
+        left: 0vw;
+        width: relative;
+        height: 5vw;
+        right: 0vw;
+        list-style-type: none;
+        padding: 0vw;
+        background-color: #83DBEE; 
+    }
+
+    #myLinks{
+        display: none;
+    }
+
+    #myLinks2{
+        display: none;
+    }
+
+    #myLinks3{
+        justify-content: right;
+        height: 100vh;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #83DBEE;
+    }
+
+    .buttonActivate{
+        justify-content: right;
+        background-color: #73CDE1;
+        border: none;
+        color: white;
+        text-align: center;
+        display: inline-block;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        font-size: 1vw;
+    }
+    
+    .button2 {
+        background-color: #83DBEE;
+        border: none;
+        color: white;
+        justify-content: right;
+        text-align: center;
+        display: inline-block;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        font-size: 1.4vw;
+    }
+
+    .button {
+        display: none;
+    }
+        
+    .header #myLinks {
+        display: block;
+    }
+    
+    .header a {
+        color: white;
+        padding: 1.4vw 1.6vw;
+        text-decoration: none;
+        font-size: 1.4vw;
+        display: block;
+    }
+
+    .header a.icon {
+        display: block;
+        position: absolute;
+        right: 0.5vw;
+        top: 0.5vw;
+        padding: 0.8vw 1vw;
+    }
+
+    .button2 a:hover{
+        display: flex;
+        height: 1vw;
+        width: 4vw;
+        background-color: #73CDE1;
+    }
+    .logo{
+        width:7vw;
+        height:3.5vw;
+    }
+
+    .profilelogo{
+        display: none;
+    }
+
+
+    /*Content*/
+    .size{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .wrapper-content{
+        width: 100%;
+        height: 80vw;
+    }
+    .centered{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .ourstory{
+        top: 6vw;
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        flex-direction: column;
+        position: relative;
+        height: 4vw;
+        width:  69vw;
+        font-family: 'Quicksand';
+        font-weight: 700;
+        font-size: 3vw;
+        color: #0077B6;
+        
+    }
+    
+    .stories{
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        flex-direction: row;
+        position: relative;
+        height: 85vw;
+        width: 100%;
+    }
+    
+    .story{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        height: 75vw;
+        width: 40vw;
+        top: 6.5vw;
+        font-family: 'Quicksand';
+        font-weight: 700;
+        font-size: 2vw;
+        color: #28759D;
+        background: rgba(144, 224, 239, 0.3);
+        border-radius: 2vw; 
+        padding: 0vw 1vw;
+        filter: blur(0);
+    }
+    
+    .koko{
+        top: 6.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        padding: 0vw 5vw;
+        height: 70vw;
+    }
+    
+    .Info{
+        height: 15vw;
+        width: 62.5vw;
+        background: rgba(144, 224, 239, 0.3);
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Quicksand';
+        font-weight: 700;
+        font-size: 3vw;
+        color: #28759D;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        top: 80vw;
+    }
+     
+    .OurInfo{
+        font-family: 'Quicksand';
+        font-weight: 700;
+        font-size: 2vw;
+        color: #28759D;
+        width: 12vw;
+        text-align: center;
+    }
+    
+    .wrapper{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        width: 62.5vw;
+    }
+    
+    .kokoSize{
+        height:19vw;
+    }
+    .socmedlogo{
+        width:2vw;
+        height:2vw;
+    }
+    
+    .logo{
+        width:10vw;
+        height:5vw;
+    }
+    
+    .profilelogo{
+        width:45px;
+        height:40px;
+    }
+    
+    .signuplogo{
+        width: 40px;
+        padding: .4vw;
+    }
+
+         /* footer */
+        .centered1{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .txt{
+            font-family: 'Quicksand';
+            font-style: normal;
+        }
+    
+        .sosMedBox{
+            /* width: 12.5vw; */
+            height: 3.5vw;
+            justify-content: space-between;
+        }
+    
+        .footer{
+            position: relative;
+            height: 20vw;
+            min-width: 100%;
+            background-color: #AAEAF9;
+            align-items: flex-end;
+            text-align: center;
+        }
+    
+        .footerTxt1{
+            
+            font-weight: 700;
+            font-size: 2vw;
+            line-height: 2vw;
+            color: #0077B6;
+        }
+    
+        .footerTxt2{
+            
+            font-weight: 700;
+            font-size: 1.8vw;
+            line-height: 3vw;
+            color: #0077B6;
+        }
+    
+        .footerTxt3{
+            
+            font-weight: 700;
+            font-size: 1.5vw;
+            line-height: 3vw;
+            color: #0077B6;
+        }
+}

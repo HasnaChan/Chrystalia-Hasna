@@ -1,0 +1,1196 @@
+/*Desktop*/
+@media only screen and (min-width: 833px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    
+    .wrapAll{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    /* header */
+    .fugemylogo{
+        display: flex;
+        justify-content: left;
+        position: absolute;
+        left: 0;
+        padding: 0.4vw 1.5vw;
+    }
+
+
+    .profile{
+        justify-content: right;
+        padding: 0.5vw 0.8vw;
+    }
+
+    .header{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        position: fixed;
+        left: 0vw;
+        width: relative;
+        height: 5vw;
+        right: 0vw;
+        list-style-type: none;
+        background-color: #83DBEE;
+    }
+
+    #myLinks{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #myLinks3{
+        display: none;
+    }
+    
+    #myLinks2{
+        display: none;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .button {
+        background-color: #83DBEE;
+        border: none;
+        color: white;
+        padding: .5vw 2vw;
+        text-align:center;
+        display: inline-block;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        font-size: 1vw;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .button2{
+        display: none;
+    }
+    span .button:hover{
+        height: 5vw;
+        background-color: #73CDE1;
+    }
+    
+
+    /*Content*/
+
+        /* Carousel  */
+    .buttonActivate{
+        background-color: #73CDE1;
+        border: none;
+        color: white;
+        padding: .5vw 2vw;
+        text-align: center;
+        display: inline-block;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        font-size: 1vw;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    .size{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .wrapper{
+        width: 100%;
+        height: 50vw;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    #carouselContainer{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        flex-direction: row;
+        height: 18vw;
+        top: 7vw;
+        background: url(Ads/iklan-01.png);
+        filter: drop-shadow(0vw 0.4vw 0.4vw rgba(0, 0, 0, 0.25)); 
+        display: flex;
+        overflow: hidden;
+    }
+
+    .carouselAds{
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-direction: row;
+        height: 18vw;
+        transition: opacity .2s ease-out;
+        opacity: .5;
+        display: none;
+    }
+
+    .carouselAds.active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-direction: row;
+        height: 18vw;
+        opacity: 1;
+        display:block; 
+    }
+    
+    .buttonAds{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        opacity: .5;
+        color: #73CDE1;
+        transition: opacity .2s ease-out;
+        position: relative;
+        width: 2vw;
+        height: 2vw;
+        top: 7.2vw;
+    }
+
+    .buttonSize{
+        height:2.5vw;
+    }
+    
+
+    #buttonLeft{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        opacity: .5;
+        color: #73CDE1;
+        transition: opacity .2s ease-out;
+        position: relative;
+        width: 2vw;
+        height: 2vw;
+        top: 7.2vw;
+        left: 0;
+    }
+    #buttonRight{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        opacity: .5;
+        color: #73CDE1;
+        transition: opacity .2s ease-out;
+        position: relative;
+        width: 2vw;
+        height: 2vw;
+        top: 7.2vw;
+        right: 0;
+    }
+
+    #buttonRight:hover{
+        opacity: 1;
+    }
+    #buttonLeft:hover{
+        opacity: 1;
+    }
+    /* .buttonAds2{
+        display: none;
+    } */
+
+    .buttonSize2{
+        display: none;
+    }
+    .buttonAds2:hover{
+        display: none;
+    }
+
+    #buttonLeft2{
+        display: none;
+    }
+        /*contens after carousel*/
+    .centered{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+
+
+    .rectangle {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        width: 65vw;
+        height: 10vw;
+        top: 10.5vw;
+        background: rgba(144, 224, 239, 0.3);
+    }
+
+    .rectangles{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 6vw;
+        background: #18AEC8;
+        border: 0.2vw solid #18AEC8;
+        transform: rotate(90deg);
+    }
+
+    .info{
+        top: 40vw;
+        font-family: 'Quicksand';
+        font-weight: 700;
+        font-size: 2vw;
+        line-height: 4.7vw;
+        text-align: center;
+        color: #18AEC8;
+    }
+
+    .signUp{
+        position: relative;
+        display: inline-block;
+        width: 15vw;
+        height: 4vw;
+        top: 13vw;
+        font-family: 'Quicksand';
+        font-size: 2.5vw;
+        font-weight: 700;
+        color: #0077B6;
+        background: #CAF0F8;
+        box-shadow: 0vw 0.4vw 4vw rgba(0, 0, 0, 0.25);
+        border-radius: 5vw;
+        border: none;
+    }
+
+    .signUp:hover{
+        background-color: rgba(144, 224, 239, 0.3);
+    }
+
+
+    .socmedlogo{
+        width:2vw;
+        height:2vw;
+    }
+
+    .logo{
+        width:10vw;
+        height:5vw;
+    }
+
+    .profilelogo{
+        width:4vw;
+    }
+
+    .signuplogo{
+        width: 4vw;
+        padding: .4vw;
+    }
+
+    /* footer */
+    .centered1{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .txt{
+        font-family: 'Quicksand';
+        font-style: normal;
+    }
+
+    .sosMedBox{
+        width: 12.5vw;
+        height: 3vw;
+        justify-content: space-between;
+    }
+
+    .footer{
+        position: relative;
+        height: 16vw;
+        min-width: 100%;
+        background-color: #AAEAF9;
+        align-items: flex-end;
+        text-align: center;
+    }
+
+    .footerTxt1{
+        
+        font-weight: 700;
+        font-size: 1.3vw;
+        line-height: 1.5vw;
+        color: #0077B6;
+    }
+
+    .footerTxt2{
+        
+        font-weight: 700;
+        font-size: 1.1vw;
+        line-height: 2.5vw;
+        color: #0077B6;
+    }
+
+    .footerTxt3{
+        
+        font-weight: 700;
+        font-size: .8vw;
+        line-height: 2.5vw;
+        color: #0077B6;
+    }
+}
+
+
+/*Tablet*/
+
+ 
+@media only screen and (max-width: 832px)and (min-width: 360px)  {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    /*Header*/
+    .hamburger{
+        display: block;
+        width: 2vw;
+        padding-top: 0.5vw;
+    }
+
+    .size{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .wrapper{
+        width: 100%;
+        height: 30vw;
+    }
+    .wrapAll{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
+
+    .fugemylogo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        padding: 2.5vw 0vw;
+        height: 0.5vw;
+    }
+    
+    .profile{
+        justify-content: right;
+        padding: 0.8vw 1vw;
+    }
+    
+    .header{
+        display: flex;
+        justify-content: right;
+        position: fixed;
+        top: 0vw;
+        left: 0vw;
+        width: relative;
+        height: 5vw;
+        right: 0vw;
+        list-style-type: none;
+        padding: 0vw;
+        background-color: #83DBEE; 
+    }
+
+    #myLinks{
+        display: none;
+    }
+
+    #myLinks3{
+        display: none;
+    }
+
+    #myLinks2{
+        justify-content: right;
+        height: 100vh;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #83DBEE;
+    }
+
+    .buttonActivate{
+        justify-content: right;
+        background-color: #73CDE1;
+        border: none;
+        color: white;
+        text-align: center;
+        display: inline-block;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        font-size: 1vw;
+    }
+    
+    .button2 {
+        background-color: #83DBEE;
+        border: none;
+        color: white;
+        justify-content: right;
+        text-align: center;
+        display: inline-block;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        font-size: 1vw;
+    }
+
+    .button {
+        display: none;
+    }
+        
+    .header #myLinks {
+        display: block;
+    }
+    
+    .header a {
+        color: white;
+        padding: 1.4vw 1.6vw;
+        text-decoration: none;
+        font-size: 1vw;
+        display: block;
+    }
+
+    .header a.icon {
+        display: block;
+        position: absolute;
+        right: 0.5vw;
+        top: 0.5vw;
+        padding: 0.8vw 1vw;
+    }
+
+    .button2 a:hover{
+        display: flex;
+        height: 1vw;
+        width: 4vw;
+        background-color: #73CDE1;
+    }
+    .logo{
+        width:7vw;
+        height:3.5vw;
+    }
+
+    .profilelogo{
+        display: none;
+    }
+
+
+    /*Content*/
+
+        /* Carousel  */
+        .buttonActivate{
+            background-color: #73CDE1;
+            border: none;
+            color: white;
+            padding: .5vw 2vw;
+            text-align: center;
+            display: inline-block;
+            font-family: 'Quicksand';
+            font-weight: 500;
+            font-size: 1vw;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        
+        .size{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    
+        .wrapper{
+            width: 100%;
+            height: 50vw;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+            flex-direction: row;
+        }
+    
+        #carouselContainer{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            align-items: center;
+            flex-direction: row;
+            height: 18vw;
+            top: 7vw;
+            background: url(Ads/iklan-01.png);
+            filter: drop-shadow(0vw 0.4vw 0.4vw rgba(0, 0, 0, 0.25)); 
+            display: flex;
+            overflow: hidden;
+        }
+    
+        .carouselAds{
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            flex-direction: row;
+            height: 18vw;
+            transition: opacity .2s ease-out;
+            opacity: .5;
+            display: none;
+        }
+    
+        .carouselAds.active{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            flex-direction: row;
+            height: 18vw;
+            opacity: 1;
+            display:block; 
+        }
+        
+        .buttonAds{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            opacity: .5;
+            color: #73CDE1;
+            transition: opacity .2s ease-out;
+            position: relative;
+            width: 2vw;
+            height: 2vw;
+            top: 7.2vw;
+        }
+    
+        .buttonSize{
+            height:2.5vw;
+        }
+        
+    
+        #buttonLeft{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            opacity: .5;
+            color: #73CDE1;
+            transition: opacity .2s ease-out;
+            position: relative;
+            width: 2vw;
+            height: 2vw;
+            top: 7.2vw;
+            left: 0;
+        }
+        #buttonRight{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            opacity: .5;
+            color: #73CDE1;
+            transition: opacity .2s ease-out;
+            position: relative;
+            width: 2vw;
+            height: 2vw;
+            top: 7.2vw;
+            right: 0;
+        }
+    
+        #buttonRight:hover{
+            opacity: 1;
+        }
+        #buttonLeft:hover{
+            opacity: 1;
+        }
+        /* .buttonAds2{
+            display: none;
+        } */
+    
+        .buttonSize2{
+            display: none;
+        }
+        .buttonAds2:hover{
+            display: none;
+        }
+    
+        #buttonLeft2{
+            display: none;
+        }
+            /*contens after carousel*/
+        .centered{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+        }
+    
+    
+        .rectangle {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            align-items: center;
+            width: 65vw;
+            height: 10vw;
+            top: 10.5vw;
+            background: rgba(144, 224, 239, 0.3);
+        }
+    
+        .rectangles{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 6vw;
+            background: #18AEC8;
+            border: 0.2vw solid #18AEC8;
+            transform: rotate(90deg);
+        }
+    
+        .info{
+            top: 40vw;
+            font-family: 'Quicksand';
+            font-weight: 700;
+            font-size: 2vw;
+            line-height: 4.7vw;
+            text-align: center;
+            color: #18AEC8;
+        }
+    
+        .signUp{
+            position: relative;
+            display: inline-block;
+            width: 15vw;
+            height: 4vw;
+            top: 13vw;
+            font-family: 'Quicksand';
+            font-size: 2.5vw;
+            font-weight: 700;
+            color: #0077B6;
+            background: #CAF0F8;
+            box-shadow: 0vw .4vw .4vw rgba(0, 0, 0, 0.25);
+            border-radius: 5vw;
+            border: none;
+        }
+    
+        .signUp:hover{
+            background-color: rgba(144, 224, 239, 0.3);
+        }
+    
+    
+        .socmedlogo{
+            width:2vw;
+            height:2vw;
+        }
+
+        .logo{
+            width:10vw;
+            height:5vw;
+        }
+    
+        .profilelogo{
+            width:4vw;
+        }
+    
+        .signuplogo{
+            width: 4vw;
+            padding: .4vw;
+        }
+    
+        /* footer */
+        .centered1{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .txt{
+            font-family: 'Quicksand';
+            font-style: normal;
+        }
+    
+        .sosMedBox{
+            /* width: 12.5vw; */
+            height: 3.5vw;
+            justify-content: space-between;
+        }
+    
+        .footer{
+            position: relative;
+            height: 16vw;
+            min-width: 100%;
+            background-color: #AAEAF9;
+            align-items: flex-end;
+            text-align: center;
+        }
+    
+        .footerTxt1{
+            
+            font-weight: 700;
+            font-size: 1.3vw;
+            line-height: 1.5vw;
+            color: #0077B6;
+        }
+    
+        .footerTxt2{
+            
+            font-weight: 700;
+            font-size: 1.1vw;
+            line-height: 2.5vw;
+            color: #0077B6;
+        }
+    
+        .footerTxt3{
+            
+            font-weight: 700;
+            font-size: .8vw;
+            line-height: 2.5vw;
+            color: #0077B6;
+        }
+}  
+
+
+/*Android*/
+
+@media only screen and (max-width: 360px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    /*Header*/
+    .hamburger{
+        display: block;
+        width: 2vw;
+        padding-top: 0.5vw;
+    }
+
+    .size{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .wrapper{
+        width: 100%;
+        height: 30vw;
+    }
+    .wrapAll{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
+
+    .fugemylogo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        padding: 2.5vw 0vw;
+        height: 0.5vw;
+    }
+    
+    .profile{
+        justify-content: right;
+        padding: 0.8vw 1vw;
+    }
+    
+    .header{
+        display: flex;
+        justify-content: right;
+        position: fixed;
+        top: 0vw;
+        left: 0vw;
+        width: relative;
+        height: 5vw;
+        right: 0vw;
+        list-style-type: none;
+        padding: 0vw;
+        background-color: #83DBEE; 
+    }
+
+    #myLinks{
+        display: none;
+    }
+
+    #myLinks2{
+        display: none;
+    }
+
+    #myLinks3{
+        justify-content: right;
+        height: 100vh;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #83DBEE;
+    }
+
+    .buttonActivate{
+        justify-content: right;
+        background-color: #73CDE1;
+        border: none;
+        color: white;
+        text-align: center;
+        display: inline-block;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        font-size: 1vw;
+    }
+    
+    .button2 {
+        background-color: #83DBEE;
+        border: none;
+        color: white;
+        justify-content: right;
+        text-align: center;
+        display: inline-block;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        font-size: 1.4vw;
+    }
+
+    .button {
+        display: none;
+    }
+        
+    .header #myLinks {
+        display: block;
+    }
+    
+    .header a {
+        color: white;
+        padding: 1.4vw 1.6vw;
+        text-decoration: none;
+        font-size: 1.4vw;
+        display: block;
+    }
+
+    .header a.icon {
+        display: block;
+        position: absolute;
+        right: 0.5vw;
+        top: 0.5vw;
+        padding: 0.8vw 1vw;
+    }
+
+    .button2 a:hover{
+        display: flex;
+        height: 1vw;
+        width: 4vw;
+        background-color: #73CDE1;
+    }
+
+    .profilelogo{
+        display: none;
+    }
+
+
+    /*Content*/
+
+        /* Carousel  */
+        .buttonActivate{
+            background-color: #73CDE1;
+            border: none;
+            color: white;
+            padding: .5vw 2vw;
+            text-align: center;
+            display: inline-block;
+            font-family: 'Quicksand';
+            font-weight: 500;
+            font-size: 1vw;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        
+        .size{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    
+        .wrapper{
+            width: 100%;
+            height: 50vw;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+            flex-direction: row;
+        }
+    
+        #carouselContainer{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            align-items: center;
+            flex-direction: row;
+            height: 20vw;
+            top: 9vw;
+            background: url(Ads/iklan-01.png);
+            filter: drop-shadow(0vw 0.4vw 0.4vw rgba(0, 0, 0, 0.25)); 
+            display: flex;
+            overflow: hidden;
+        }
+    
+        .carouselAds{
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            flex-direction: row;
+            height: 20vw;
+            transition: opacity .2s ease-out;
+            opacity: .5;
+            display: none;
+        }
+    
+        .carouselAds.active{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            flex-direction: row;
+            height: 20vw;
+            opacity: 1;
+            display:block; 
+        }
+        
+        .buttonAds{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            opacity: .5;
+            color: #73CDE1;
+            transition: opacity .2s ease-out;
+            position: relative;
+            width: 2vw;
+            height: 2vw;
+            top: 7.2vw;
+        }
+    
+        .buttonSize{
+            height:2.5vw;
+        }
+        
+    
+        #buttonLeft{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            opacity: .5;
+            color: #73CDE1;
+            transition: opacity .2s ease-out;
+            position: relative;
+            width: 2vw;
+            height: 2vw;
+            top: 7.2vw;
+            left: 0;
+        }
+        #buttonRight{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            opacity: .5;
+            color: #73CDE1;
+            transition: opacity .2s ease-out;
+            position: relative;
+            width: 2vw;
+            height: 2vw;
+            top: 7.2vw;
+            right: 0;
+        }
+    
+        #buttonRight:hover{
+            opacity: 1;
+        }
+        #buttonLeft:hover{
+            opacity: 1;
+        }
+        /* .buttonAds2{
+            display: none;
+        } */
+    
+        .buttonSize2{
+            display: none;
+        }
+        .buttonAds2:hover{
+            display: none;
+        }
+    
+        #buttonLeft2{
+            display: none;
+        }
+            /*contens after carousel*/
+        .centered{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+        }
+    
+    
+        .rectangle {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            align-items: center;
+            flex-direction: column;
+            width: 65vw;
+            height: 35vw;
+            top: 13vw;
+            background: rgba(144, 224, 239, 0.3);
+        }
+    
+        .rectangles{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 6vw;
+            background: #18AEC8;
+            border: 0.2vw solid #18AEC8;
+            transform: rotate(180deg);
+        }
+    
+        .info{
+            top: 40vw;
+            font-family: 'Quicksand';
+            font-weight: 700;
+            font-size: 3vw;
+            line-height: 10vw;
+            text-align: center;
+            color: #18AEC8;
+        }
+    
+        .signUp{
+            position: relative;
+            display: inline-block;
+            width: 15vw;
+            height: 4vw;
+            top: 15vw;
+            font-family: 'Quicksand';
+            font-size: 2.5vw;
+            font-weight: 700;
+            color: #0077B6;
+            background: #CAF0F8;
+            box-shadow: 0vw .4vw .4vw rgba(0, 0, 0, 0.25);
+            border-radius: 5vw;
+            border: none;
+        }
+    
+        .signUp:hover{
+            background-color: rgba(144, 224, 239, 0.3);
+        }
+    
+    
+        .socmedlogo{
+            width:2vw;
+            height:2vw;
+        }
+
+        .logo{
+            width:10vw;
+            height:5vw;
+        }
+    
+        .profilelogo{
+            width:4vw;
+        }
+    
+        .signuplogo{
+            width: 4vw;
+            padding: .4vw;
+        }
+    
+        /* footer */
+        .centered1{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .txt{
+            font-family: 'Quicksand';
+            font-style: normal;
+        }
+    
+        .sosMedBox{
+            /* width: 12.5vw; */
+            height: 3.5vw;
+            justify-content: space-between;
+        }
+    
+        .footer{
+            position: relative;
+            height: 20vw;
+            min-width: 100%;
+            background-color: #AAEAF9;
+            align-items: flex-end;
+            text-align: center;
+        }
+    
+        .footerTxt1{
+            
+            font-weight: 700;
+            font-size: 2vw;
+            line-height: 2vw;
+            color: #0077B6;
+        }
+    
+        .footerTxt2{
+            
+            font-weight: 700;
+            font-size: 1.8vw;
+            line-height: 3vw;
+            color: #0077B6;
+        }
+    
+        .footerTxt3{
+            
+            font-weight: 700;
+            font-size: 1.5vw;
+            line-height: 3vw;
+            color: #0077B6;
+        }
+}

@@ -1,0 +1,619 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.centered{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.txt{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+}
+.size{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Footer */
+.sosMedBox{
+    width: 12.5vw;
+    height: 3.5vw;
+    justify-content: space-between;
+}
+.footer{
+    position: relative;
+    height: 16vw;
+    min-width: 100%;
+    background-color: #AAEAF9;
+    align-items: flex-end;
+    text-align: center;
+}
+.footerTxt1{
+    font-size: 1.3vw;
+    line-height: 1.5vw;
+    color: #0077B6;
+}
+.footerTxt2{
+    font-size: 1.1vw;
+    line-height: 2.5vw;
+    color: #0077B6;
+}
+.footerTxt3{
+    font-size: .8vw;
+    line-height: 2.5vw;
+    color: #0077B6;
+}
+.sosmedLogo{
+    width: 2vw;
+    height: 2vw;
+}
+.logo{
+    width: 10vw; 
+    height:5vw;
+}
+
+
+/* Desktop */
+@media only screen and (min-width: 833px){
+    
+    /* Header */
+    .fugemylogo{
+        display: flex;
+        justify-content: left;
+        position: absolute;
+        left: 0;
+        padding: 0.4vw 1.5vw;
+    }
+    .profile{
+        justify-content: right;
+        padding: 0.5vw 0.8vw;
+    }
+    .header{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        position: fixed;
+        left: 0vw;
+        width: relative;
+        height: 5vw;
+        right: 0vw;
+        list-style-type: none;
+        background-color: #83DBEE;
+    }
+    #myLinks{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #myLinks2{
+        display: none;
+    }
+    #myLinks3{
+        display: none;
+    }
+    .hamburger{
+        display: none;
+    }
+    .button {
+        background-color: #83DBEE;
+        border: none;
+        color: white;
+        padding: .5vw 2vw;
+        text-align:center;
+        display: inline-block;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        font-size: 1vw;
+        align-items: center;
+        justify-content: center;
+    }
+    .button2{
+        display: none;
+    }
+    span .button:hover{
+        height: 5vw;
+        background-color: #73CDE1;
+    }
+    .profilelogo{
+        width:4vw;
+    }
+    
+    /* Content */
+    .flex-column{
+        display: none;
+    }
+    .container1{
+        margin-top: 4vw ;
+        height: 30vw;
+        width: 78.8vw;
+        padding-top: 2vw;
+    }
+    .category{
+        margin-left: 2.5vw;
+        width: 30vw;
+        height: 3vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #backButton{
+        opacity: .5;
+        color: #0077B6;
+        transition: opacity .2s ease-out;
+        width: 2vw;
+        margin-top: 2.5vw;
+        height: 3.8vw;
+    }
+    #backButton:hover{
+        opacity: 1;
+    }
+    .title{
+        font-size: 2vw;
+        color: #0077B6;
+        text-decoration: underline;
+    }
+    .course-container{
+        width: 100%;
+        height: 22vw;
+        margin-top: 1vw;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .course{
+        width: 18vw;
+        height: 18vw;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .course-img{
+        align-items: center;
+        height: 11vw;
+        background-color: #CFEFF9;
+    }
+    .course-info{
+        height: 7vw;
+        background-color: #BEEBF7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: .5vw;
+    }
+    .info-txt1{
+        font-size: 1.1vw;
+        color: #0077B6;
+    }
+    .info-txt2{
+        font-size: .7vw;
+        line-height: 1.8vw;
+        color: #0077B6;
+    }
+    
+    /* resize image*/
+    .width-course{
+        width: 16.4vw;
+    }
+    .height-button{
+        height: 1.6vw;
+    }
+}
+
+
+/* Tablet */
+@media only screen and (max-width: 832px) and (min-width: 360px){
+     
+    /* Header */
+    .fugemylogo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        padding: 2.5vw 0vw;
+        height: 0.5vw;
+    }
+    .profile{
+        justify-content: right;
+        padding: 0.8vw 1vw;
+    }
+    .header{
+        display: flex;
+        justify-content: right;
+        position: fixed;
+        top: 0vw;
+        left: 0vw;
+        width: relative;
+        height: 5vw;
+        right: 0vw;
+        list-style-type: none;
+        padding: 0vw;
+        background-color: #83DBEE; 
+    }
+    #myLinks{
+        display: none;
+    }
+    #myLinks2{
+        justify-content: right;
+        height: 100vh;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #83DBEE;
+    }
+    #myLinks3{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        width: 2vw;
+        padding-top: 0.5vw;
+    }
+    .buttonActivate{
+        justify-content: right;
+        background-color: #73CDE1;
+        border: none;
+        color: white;
+        text-align: center;
+        display: inline-block;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        font-size: 1vw;
+    }
+    .button2 {
+        background-color: #83DBEE;
+        border: none;
+        color: white;
+        justify-content: right;
+        text-align: center;
+        display: inline-block;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        font-size: 1vw;
+    }
+    .button {
+        display: none;
+    } 
+    .header #myLinks {
+        display: block;
+    }
+    .header a {
+        color: white;
+        padding: 1.4vw 1.6vw;
+        text-decoration: none;
+        font-size: 1vw;
+        display: block;
+    }
+    .header a.icon {
+        display: block;
+        position: absolute;
+        right: 0.5vw;
+        top: 0.5vw;
+        padding: 0.8vw 1vw;
+    }
+    .button2 a:hover{
+        display: flex;
+        height: 1vw;
+        width: 4vw;
+        background-color: #73CDE1;
+    }
+    .profilelogo{
+        display: none;
+    }
+
+    /* Content */
+    .flex-row{
+        display: none;
+    }
+    .container2{
+        margin-top: 8vw;
+        height:120vw;
+        width: 100%;
+    }
+    .category{
+        width: 60vw;
+        height: 6vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #backButton{
+        opacity: .5;
+        color: #0077B6;
+        transition: opacity .2s ease-out;
+        width: 4vw;
+        margin-top: 5vw;
+        height: 7.6vw;
+    }
+    #backButton:hover{
+        opacity: 1;
+    }
+    .title{
+        font-size: 3.6vw;
+        color: #0077B6;
+        text-decoration: underline;
+    }
+    .course-container{
+        width: 100%;
+        height: 100vw;
+        margin-top: 2vw;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .course{
+        width: 80vw;
+        height: 30vw;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .course-img{
+        align-items: center;
+        height: 22vw;
+        width: 38vw;
+        background-color: #CFEFF9;
+    }
+    .course-info{
+        height: 22vw;
+        width: 36vw;
+
+        background-color: #BEEBF7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 2.4vw;
+        padding-bottom: 1vw;
+    }
+    .info-txt1{
+        font-size: 2.4vw;
+        color: #0077B6;
+    }
+    .info-txt2{
+        font-size: 1.2vw;
+        line-height: 1.6vw;
+        color: #0077B6;
+    }
+    
+    /* resize image */
+    .width-course{
+        width: 35vw;
+    }
+    .height-button{
+        height: 2.7vw;
+    }
+}
+
+
+/* Phone */
+@media only screen and (max-width: 360px){
+     
+    /* Header */
+    .fugemylogo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        padding: 2.5vw 0vw;
+        height: 0.5vw;
+    }
+    .profile{
+        justify-content: right;
+        padding: 0.8vw 1vw;
+    }
+    .header{
+        display: flex;
+        justify-content: right;
+        position: fixed;
+        top: 0vw;
+        left: 0vw;
+        width: relative;
+        height: 5vw;
+        right: 0vw;
+        list-style-type: none;
+        padding: 0vw;
+        background-color: #83DBEE;  
+    }
+    #myLinks{
+        display: none;
+    }
+    #myLinks2{
+        display: none;
+    }
+    #myLinks3{
+        justify-content: right;
+        height: 100vh;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #83DBEE;
+    }
+    .hamburger{
+        display: block;
+        width: 2vw;
+        padding-top: 0.5vw;
+    }
+    .buttonActivate{
+        justify-content: right;
+        background-color: #73CDE1;
+        border: none;
+        color: white;
+        text-align: center;
+        display: inline-block;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        font-size: 1vw;
+    }
+    .button2 {
+        background-color: #83DBEE;
+        border: none;
+        color: white;
+        justify-content: right;
+        text-align: center;
+        display: inline-block;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        font-size: 1.4vw;
+    }
+    .button {
+        display: none;
+    }
+    .header #myLinks {
+        display: block;
+    }
+    .header a {
+        color: white;
+        padding: 1.4vw 1.6vw;
+        text-decoration: none;
+        font-size: 1.4vw;
+        display: block;
+    }
+    .header a.icon {
+        display: block;
+        position: absolute;
+        right: 0.5vw;
+        top: 0.5vw;
+        padding: 0.8vw 1vw;
+    }
+    .button2 a:hover{
+        display: flex;
+        height: 1vw;
+        width: 4vw;
+        background-color: #73CDE1;
+    }
+    .profilelogo{
+        display: none;
+    }
+    
+    /* Content */
+    .flex-row{
+        display: none;
+    }
+    .container2{
+        margin-top: 4.3vw;
+        height:172vw;
+        width: 100%;
+    }
+    .category{
+        padding-left: 2.15vw;
+        width: 64.5vw;
+        height: 8.6vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #backButton{
+        opacity: .5;
+        color: #0077B6;
+        transition: opacity .2s ease-out;
+        width: 8.6vw;
+        margin-top: 10.7vw;
+        height: 16.3vw;
+    }
+    #backButton:hover{
+        opacity: 1;
+    }
+    .title{
+        font-size: 4.4vw;
+        color: #0077B6;
+        text-decoration: underline;
+    }
+    .course-container{
+        width: 100%;
+        height: 150.5vw;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .course{
+        width: 43vw;
+        height: 43vw;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .course-img{
+        align-items: center;
+        width: 43vw;
+        height: 25.8vw;
+        background-color: #CFEFF9;
+    }
+    .course-info{
+        width: 43vw;
+        height: 17.2vw;
+        padding: 0;
+        margin: 0;
+        background-color: #BEEBF7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .info-txt1{
+        font-size: 2.4vw;
+        color: #0077B6;
+    }
+    .info-txt2{
+        font-size: 1.8vw;
+        line-height: 4.3vw;
+        color: #0077B6;
+    }
+
+    /* Footer */
+    .footer{
+        position: relative;
+        height: 20vw;
+        min-width: 100%;
+        background-color: #AAEAF9;
+        align-items: flex-end;
+        text-align: center;
+    }
+    .footerTxt1{
+        font-size: 2vw;
+            line-height: 2vw;
+        color: #0077B6;
+    }
+    .footerTxt2{
+        font-size: 1.8vw;
+        line-height: 3vw;
+        color: #0077B6;
+    }
+    .footerTxt3{
+        font-size: 1.5vw;
+        line-height: 3vw;
+        color: #0077B6;
+    }
+    
+    /* resize image*/
+    .width-course{
+        width: 40vw;
+    }
+    .height-button{
+        height: 5vw;
+        padding-top: 1.3vw;
+    }
+}
+
+
+
+
